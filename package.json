@@ -1,0 +1,40 @@
+{
+  "name": "webapps",
+  "version": "1.0.0",
+  "description": "a set of web applications",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zli15/webapps.git"
+  },
+  "keywords": [
+    "apps"
+  ],
+  "author": "zli15",
+  "babel": {
+    "presets": ["@babel/preset-env"]
+  },
+  "nodemonConfig": { 
+    "exec": "npm run dev",
+    "watch": ["server/*", "tictactoe/*"],
+    "ignore": ["**/__tests__/**", "*.test.js", "*.spec.js"]
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zli15/webapps/issues"
+  },
+  "homepage": "https://github.com/zli15/webapps#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "koa": "^2.13.4"
+  }
+}
